@@ -403,7 +403,7 @@
     </div>
     <div class="status-sync">
       <div class="sync-dot"></div>
-      <span id="syncText">Terkoneksi ke BEJO Remote</span>
+      <span id="syncText">Live Interactive Mode</span>
     </div>
   </header>
 
@@ -422,7 +422,7 @@
       Slide <span id="currentNum">1</span> / <span id="totalNum">9</span>
     </div>
     <div class="key-hint">
-      Tinggal bilang ke BEJO di Telegram: <b>"lanjut"</b> / <b>"mundur"</b>
+      <span>Gunakan tombol atau panah keyboard <span style="background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;">←</span> <span style="background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;">→</span></span>
     </div>
     <div class="controls">
       <button class="btn" id="prevBtn" onclick="prevSlide()">◀ Sebelumnya</button>
@@ -778,7 +778,7 @@
         document.getElementById('syncText').textContent = 'Menghubungkan ulang...';
       };
       eventSource.onopen = () => {
-        document.getElementById('syncText').textContent = 'Terkoneksi ke BEJO Remote';
+        document.getElementById('syncText').textContent = 'Live Interactive Mode';
       };
     }
 
